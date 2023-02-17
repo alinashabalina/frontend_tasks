@@ -1,6 +1,6 @@
 button {
-    border: none;
-    background: none;
+border: none;
+background: none;
 }
 
 .button {
@@ -15,6 +15,21 @@ background-color: hotpink;
 top: 5px;
 position: absolute;
 }
+
+.pink:active {
+animation-name: slide;
+animation-duration: 0.3s;
+}
+
+@keyframes slide {
+    from {
+      top: 5px;
+    }
+  
+    to {
+      top: 9px;
+    }
+  }
 
 .purple {
 background-color: rgb(137, 6, 72);
