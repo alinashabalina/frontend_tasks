@@ -1,0 +1,26 @@
+.progressbar {
+    margin-left: 100px;
+    background-color: rgb(163, 163, 163);
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+
+}
+
+.progress {
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    animation: progress 10s steps(99, end);
+    
+}
+
+@keyframes progress {
+    from {
+        transform: scale(1, 1);
+      }
+    
+    to {
+        transform: scale(100, 1) translate(0.5px);
+      }
+    }
