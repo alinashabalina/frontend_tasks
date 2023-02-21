@@ -1,0 +1,52 @@
+.roundbutton {
+    width: 92px;
+    height: 46px;
+    border-top: 5px solid rgb(0, 0, 255);
+    border-bottom: 5px solid blue;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-left: none;
+    border-right: none;
+    background: white;
+}
+
+.roundbutton:before,
+.roundbutton:after {
+  box-sizing: border-box;
+  transition: all 3s;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: -5px;
+  content: '';
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  border: 5px solid #ddd;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.roundbutton:before {
+  left: -23px;
+}
+
+.roundbutton:after {
+  right: -23px;
+}
+
+.roundbutton:hover {
+   text-transform: uppercase;
+}
+
+.roundbutton:hover:after
+ {
+    border-right-color: rgb(0, 0, 255);
+    border-top-color: rgb(0, 0, 255);
+}
+
+.roundbutton:hover:before
+ {
+    border-left-color: rgb(0, 0, 255);
+    border-bottom-color: rgb(0, 0, 255);
+}
