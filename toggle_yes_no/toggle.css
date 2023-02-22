@@ -1,0 +1,38 @@
+.background {
+    border: none;
+    background-color: rgb(243, 219, 243);
+    width: 100px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    position: relative;
+    font-size: 10px;
+}
+
+.background:after {
+    background-color: rgb(74, 68, 161);
+}
+
+.yes {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.no {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.toggle {
+    position: absolute;
+    left: 4px;
+    bottom: 3px;
+    top: 3px;
+    right: 4px;
+    width:44px;
+    height: 46px;
+    opacity: 30%;
+    background-color: brown;
+}
