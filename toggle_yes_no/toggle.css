@@ -34,6 +34,7 @@
     height: 44px;
     opacity: 30%;
     background-color: brown;
+    transition: all 2s;
 }
 
 .wrapper {
@@ -43,6 +44,7 @@
 
 .wrapper:checked ~ * .background {
     background-color: rgb(200, 211, 247);
+    transition: background-color 2s;
 }
 
 .wrapper:checked ~ * .yes {
@@ -59,5 +61,6 @@
     top: 3px;
     left: 52px;
     background-color: blue;
+    transition: all 2s;
 }
 
