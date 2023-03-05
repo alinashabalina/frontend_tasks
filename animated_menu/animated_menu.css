@@ -1,0 +1,30 @@
+.wrapper {
+    width: 150px;
+    height: 175px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.wrapper .item {
+    height: 45px;
+    background-color: aqua;
+    text-align: center;
+    line-height: 43px;
+    font-weight: bold;
+}
+
+.wrapper:hover .item:hover {
+    filter: drop-shadow(0 2mm 1mm #c3c3c3);
+    transform: scale(1.1, 1);
+    opacity: 100%;
+}
+
+.wrapper:hover  .item {
+    transform: scale(0.8, 0.8);
+    opacity: 60%;
+}
