@@ -1,0 +1,87 @@
+.wrapper {
+    height: 300px;
+    width: 500px;
+    background-color: white;
+}
+
+.tabs {
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.radio {
+    display: none;
+}
+
+.tab {
+    background-color: gray;
+    height: 50px;
+    width: 100px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+
+.line {
+    height: 5px;
+    width: 500px;
+    background-color: rgb(127, 159, 73);
+}
+
+.content {
+    height: 245px;
+    background-color: bisque;
+    position: relative;
+}
+
+#tab1:checked ~ * .tab[for="tab1"] {
+    background-color: rgb(127, 159, 73);
+}
+
+#tab2:checked ~ * .tab[for="tab2"] {
+    background-color: rgb(127, 159, 73);
+}
+
+#tab3:checked ~ * .tab[for="tab3"] {
+    background-color: rgb(127, 159, 73);
+}
+
+#tab4:checked ~ * .tab[for="tab4"] {
+    background-color: rgb(127, 159, 73);
+}
+
+.textcontent {
+   visibility: hidden;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+}
+
+#tab1:checked ~ * .textcontent[data-tab="tab1"] {
+    visibility: visible;
+    font-size: 20px;
+    transition: all 3s;
+}
+
+#tab2:checked ~ * .textcontent[data-tab="tab2"] {
+    visibility: visible;
+    font-size: 20px;
+    transition: all 3s;
+}
+
+#tab3:checked ~ * .textcontent[data-tab="tab3"] {
+    visibility: visible;
+    font-size: 20px;
+    transition: all 3s;
+}
+
+#tab4:checked ~ * .textcontent[data-tab="tab4"] {
+    visibility: visible;
+    font-size: 20px;
+    transition: all 3s;
+}
