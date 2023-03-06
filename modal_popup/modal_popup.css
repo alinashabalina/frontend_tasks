@@ -30,6 +30,17 @@
     z-index: 999;
 }
 
+.close {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 0;
+  }
+
+.closebutton {
+    display: none;
+}
+
 .modal {
     visibility: hidden;
     width: 200px;
@@ -54,4 +65,8 @@
 
 .popupbtn:checked ~ .modal {
     visibility: visible;
+}
+
+.closebutton:checked ~ * .blockscreen {
+    visibility: hidden;
 }
