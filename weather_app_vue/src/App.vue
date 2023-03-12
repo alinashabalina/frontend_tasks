@@ -1,14 +1,14 @@
 <template>
-  <SearchForm></SearchForm>
+  <IndexPage />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import SearchForm from './components/search-form/search-form.vue';
+import IndexPage from './pages/index/index-page.vue';
 
 @Options({
     components: {
-      SearchForm,
+      IndexPage: IndexPage
     },
   })
   export default class App extends Vue {}

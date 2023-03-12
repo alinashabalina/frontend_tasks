@@ -3,6 +3,12 @@
       width: 200px;
       height: 20px;
       border-radius: 5px;
+      &:hover {
+        box-shadow: 0px 0px 10px rgb(189, 189, 189);
+      }
+      &:focus{
+        background-color: rgb(224, 222, 222);
+      }
     }
     &__label {
       margin-right: 10px;

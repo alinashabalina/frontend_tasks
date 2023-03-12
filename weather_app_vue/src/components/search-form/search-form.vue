@@ -1,7 +1,7 @@
 <template>
     <form class="search-form">
         <SearchField></SearchField>
-        <SearchButton class="search-form__button"></SearchButton>
+        <SearchButton class="search-form__button_disabled"></SearchButton>
     </form>
   </template>  
   <script lang="ts" src="./search-form.ts"></script>
