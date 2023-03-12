@@ -1,0 +1,17 @@
+.result {
+    &__field-table {
+        width: 500px;
+        border: 1px solid;
+    }
+    &__field-row {
+        border: 1px solid;
+    }
+    &__field-cell {
+        border: 1px solid;
+        width: 250px;
+        text-align: center;
+    }
+    &__field-central{
+        text-align: center;
+    }
+}
