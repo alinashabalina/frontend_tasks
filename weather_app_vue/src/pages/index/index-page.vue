@@ -1,6 +1,11 @@
 <template>
-<SearchForm />
+  <div class="index-page__wrapper">
+    <header>
+    <h1>Check the weather in your location</h1>
+  </header>
+<SearchForm class="index-page__search"/>
 <ResultField temp="1" speed="10 km/h" direction="110"/>
+</div>
   </template>
   
   <script lang="ts" src="./index-page.ts"></script>
